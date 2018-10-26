@@ -3,13 +3,14 @@
 
 'use strict';
 var elementResponseP = document.querySelectorAll('element-response-P');
-var elemenResponseDiv = document.querySelectorAll('element-response-Div');
-var elemenResponseLi = document.querySelectorAll('element-response-Li');
-var elemenResponseInput = document.querySelectorAll('element-response-Input');
+var elementResponseDiv = document.querySelectorAll('element-response-Div');
+var elementResponseLi = document.querySelectorAll('element-response-Li');
+var elementResponseInput = document.querySelectorAll('element-response-Input');
 
 function tryQuerySelector() {
     var tags = document.querySelectorAll('input[name="element"]:checked');
     for(var i = 0; i < elementResponse.length; i++) {
+        elementResponse[i].inputname = ""
         var tag = document.querySelectorAll(tags[i].value); 
         var inputname = tags[i].value;
         var numberelement = tag.length;

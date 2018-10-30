@@ -29,13 +29,13 @@ p {
     clear: both;
     border-radius: 200px;
 }
-#pg-bgcolor {
+#pg-background {
     background-color: lightskyblue;
 }
 #fun-facts {
     color: rgb(6, 159, 255);
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
 }
 ul {
     background-color: paleturquoise;

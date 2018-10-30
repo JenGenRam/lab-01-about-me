@@ -2,7 +2,7 @@
 /* exported tryQuerySelector*/
 
 'use strict';
-var elementResponseP = document.querySelectorAll('element-response-P');
+var elementResponse = document.querySelectorAll('element-response-P');
 var elementResponseDiv = document.querySelectorAll('element-response-Div');
 var elementResponseLi = document.querySelectorAll('element-response-Li');
 var elementResponseInput = document.querySelectorAll('element-response-Input');
@@ -10,23 +10,23 @@ var elementResponseInput = document.querySelectorAll('element-response-Input');
 function tryQuerySelector() {
     var tags = document.querySelectorAll('input[name="element"]:checked');
     for(var i = 0; i < elementResponse.length; i++) {
-        elementResponse[i].inputname = ""
+        elementResponse[i].N = '';
         var tag = document.querySelectorAll(tags[i].value); 
-        var inputname = tags[i].value;
-        var numberelement = tag.length;
-        var elementResponse= (inputname + '_' + numberelement)
+        var N = tags[i].value;
+        var numberElement = tag.length;
+        var elementResponse= (inputName + '_' + numberElement);
         
-        if (elementList === "P") {
+        if(elementList === 'P') {
             elementResponse.textContent = elementResponse;
         }
-        else if (elementList === "Div") {
-            elementResponse.textContent = elementResponse;
+        else if(elementList === 'Div') {
+            elementResponseDiv.textContent = elementResponse;
         } 
-        else if (elementList === "Li") {
-            elementResponse.textContent = elementResponse;
+        else if(elementList === 'Li') {
+            elementResponseLi.textContent = elementResponse;
         }
-        else if (elementList === "Input") {
-            elementResponse.textContent = elementResponse;
+        else if(elementList === 'Input') {
+            elementResponseInput.textContent = elementResponse;
         }
     }
     
